@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DerivativeCalculator.CustomPages.AboutSimplifiedForm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                HorizontalOptions="Start"
+                   FontFamily="BossFont">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="   The simplification of the entered input was all done by the open-source math library AngouriMath with slight changes by us.
+You can learn more about this very useful library "/>
+                        <Span Text="here"
+                              TextColor="Red">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                  CommandParameter="https://am.angouri.org/"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=". &#10;&#10;&#10;"/>
+                        <Span Text="   A feature we've added is that the result, calculated by the library, can't contain numbers with more than 2 decimals.For example, 3.151 * 2.759 will show 8.69 instead of 8.693 ."/>
+                        <Span Text="&#10;&#10;&#10;Also, you can use PI(3.14...) and Euler's Constant(e = 2.71...) using the keywords ''pi'' and ''e''.However, the result will transform them into numbers, so if you enter 4pi/2 it will show 6.28 instead of 2pi. "/>
+                        <Span Text="&#10;&#10;&#10;The complex world was also brought up  in the game! The imaginary unit has its own keyword ''i''.If you try to do arcsin(2), which doesn't make sense in the real plane, it will instead give you the imaginary answer.Try it yourself !"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image x:Name="LogoImage"
+                   Margin="0 , 30 , 0 , 0"
+                   HeightRequest="180">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AngouriLogo_Tapped"/>
+
+                </Image.GestureRecognizers>
+            </Image>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

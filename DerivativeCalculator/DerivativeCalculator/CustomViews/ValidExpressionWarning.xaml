@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DerivativeCalculator.CustomViews.ValidExpressionWarning">
+  <ContentView.Content>
+      <StackLayout Orientation="Horizontal"
+                   Margin="20 , 0 , 0 , 0">
+            <Image HeightRequest="20"
+                x:Name="ExclamationMark"/>
+            <Label Text="Please enter a valid expression."
+                   TextColor="LightSlateGray"
+                   
+                   
+                   
+                   />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

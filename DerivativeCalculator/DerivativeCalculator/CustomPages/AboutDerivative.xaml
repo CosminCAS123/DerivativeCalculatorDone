@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DerivativeCalculator.CustomPages.AboutDerivative">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontFamily="BossFont"
+                   HorizontalOptions="Start">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="As we've said in the SimplfiedForm section, the math was done by the open-source library "/>
+                        <Span Text="AngouriMath"
+                          TextColor="Red">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                  CommandParameter="https://am.angouri.org/"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text="&#10;&#10;&#10;You can calculate up to the third derivative with our app.But be aware of the fact that
+a higher degree derivative will take more time than the lower ones.It still shouldn't take more than a few seconds!"/>
+                        <Span Text="&#10;&#10;&#10;It even supports special functions as input, for instance arcsin() or arctan()!The corespondent error will show up if you type a non-existent function.Have fun!"/>
+                        <Span Text="&#10;&#10;&#10;The same goes for integration.It supports defined functions, but it can only support the first integral.Both display the execution time of the process.The first time you do it, it will take more time!"/>
+                        <Span Text="&#10;&#10;&#10;This app contains over 2000 lines of code , since it has 20+ c# scripts.The biggest script is the MainPage one and it has almost 400 lines of code(C# and XAML).You can find it "/>
+                        <Span Text="here."
+                              TextColor="Red">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding MainPageCode}"
+                                                  CommandParameter="https://pastebin.com/mmzXkaMY"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text="&#10;&#10;&#10;This is my second mobile app and I hope it is at least decent.It took me 3 months to create it.Have a great day!"></Span>
+
+
+                    </FormattedString>
+                </Label.FormattedText>
+
+
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DerivativeCalculator.CustomViews.NotationsView">
+  <ContentView.Content>
+        <Frame Margin="0 , 20 , 0 , 0"
+               HeightRequest="230"
+               HorizontalOptions="Center"
+               WidthRequest="300"
+               BorderColor="#5c5e5e"
+               >
+            <Frame.Content>
+                <StackLayout>
+                    <Label Text="sin(expression)                      arcsin(expression)&#10;&#10;cos(expression)                     arccos(expression)&#10;&#10;tan(expression)                      arctan(expression)&#10; &#10;cot(expression)                      arccotan(expression)&#10;&#10;                              ln(expression)&#10;                            sqrt(expression)&#10;                          (expression)^(power)"/>
+                    <Label Margin="0 , 10 ,0 , 0"
+                           Text="            This calculator does not support log!&#10;     Use a * b instead of ab, ab will count as a ^ b."
+                           TextColor="Red"/>
+                </StackLayout>
+            </Frame.Content>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

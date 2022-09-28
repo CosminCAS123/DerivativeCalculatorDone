@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DerivativeCalculator.CustomPages.BugReportPage">
+    <ContentPage.Content>
+       
+            <StackLayout>
+            <Label HorizontalOptions="Start"
+                   FontFamily="BossFont"
+                   Text="You can enter any bug you've encountered in my application in the space below and I will receive an email with your complaint.
+                   &#10;&#10;Why not, you can also leave any app-related question on my Instagram/Facebook which you can find on the main page.">
+            </Label>
+
+            <Editor x:Name="ReportText"
+                    AutoSize="Disabled"
+                    FontFamily="BossFont"
+                    TextColor="Black"
+                    FontSize="15"         
+                    HeightRequest="200"
+                    Placeholder="  Write here"
+                    MaxLength="500"/>
+
+
+            <Button x:Name="SendReportButton"
+                    Clicked="SendReportButton_Clicked"
+                    HorizontalOptions="End"
+                    Margin="0 , 30 , 30 , 0"
+                    WidthRequest="75"
+                    FontSize="15"
+                    Text="Send"
+                    />
+        </StackLayout>
+            
+       
+
+    </ContentPage.Content>
+</ContentPage>

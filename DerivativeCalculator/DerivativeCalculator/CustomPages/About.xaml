@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custompages ="clr-namespace:DerivativeCalculator.CustomPages"
+             x:Class="DerivativeCalculator.CustomPages.About"
+             BarBackgroundColor="Red"
+            >
+  <!--Pages can be added as references or inline-->
+  <custompages:AboutDerivative Title="Calculate Derivative Integral"
+           
+      />
+  
+  <custompages:AboutSimplifiedForm Title="Simplified Form"
+                                   />
+
+
+</TabbedPage>
