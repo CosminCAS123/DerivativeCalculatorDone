@@ -12,8 +12,8 @@ namespace DerivativeCalculator.Resources
     public static class EmailSender
     {
         
-        private static  string username = "derivativebot@gmail.com";
-        private static  string password = "Teodora123";
+        private static  string username = "mail1";
+        private static  string password = "pass1";
         
          static EmailSender()
         {
@@ -51,7 +51,7 @@ namespace DerivativeCalculator.Resources
             }
             catch(Exception ex)
             {
-                Acr.UserDialogs.UserDialogs.Instance.Alert(ex.Message, "plm", "k");
+                Acr.UserDialogs.UserDialogs.Instance.Alert(ex.Message, "error", "ok");
             }
             if (email.Successful)
             {
